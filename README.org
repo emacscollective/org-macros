@@ -1,0 +1,8 @@
+These are the macros I use in Org files used to author Info manuals.
+
+In ~org-macros.el~ you can find each macro in a human-readable format.
+
+In ~orgconfig~ each macro only uses a single line, as expected by Org.
+This file can be copied next to the manual and then imported with
+~#+setupfile: .orgconfig~.  One could also just copy individual macros
+to the manual file itself.
