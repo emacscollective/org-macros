@@ -36,7 +36,13 @@ Point must be at the beginning of the section."
 
 (format-time-string "%Y")
 
-;;; {{{version}}}
+;;; {{{version}}} --- unused
+
+;; We won't be able to use this until the various package managers and
+;; package archives support generating texi files from org files, i.e.,
+;; probably never.  Until then the version string is hard-coded and only
+;; gets updated on releases by `sisyphus--bump-version-org'. This macro
+;; is present in the various ".orgconfig" files, but it is unused.
 
 (if-let ((tag (ignore-errors
                 (car (process-lines "git" "describe" "--exact-match")))))
